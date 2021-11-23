@@ -1,0 +1,11 @@
+version: "2"
+services:
+  balances:
+    image: balances
+    networks:
+      - banking_ui_default
+    environment:
+      - APP_ENV=Docker
+networks:
+  banking_ui_default:
+    external: true
